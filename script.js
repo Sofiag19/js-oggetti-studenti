@@ -84,3 +84,5 @@ etaAlunno = parseInt(prompt("Inserisci l'età del nuovo alunno"));
 alunno6.età = etaAlunno;
 
 console.log(alunno6);
+// che è uguale a scrivere
+console.log(elencoStudenti[5]);
