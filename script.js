@@ -45,26 +45,42 @@ elencoStudenti.push(alunno5);
 
 alunno1.nome = "Pietro";
 alunno1.cognome = "Lazzaro";
-alunno1.eta = "20";
+alunno1.eta = 20;
 
 alunno2.nome = "Francesca";
 alunno2.cognome = "Merli";
-alunno2.eta = "21";
+alunno2.eta = 21;
 
 alunno3.nome = "Vittoria";
 alunno3.cognome = "Usigni";
-alunno3.eta = "19";
+alunno3.eta = 19;
 
 alunno4.nome = "Stefano";
 alunno4.cognome = "Visconti";
-alunno4.eta = "26";
+alunno4.eta = 26;
 
 alunno5.nome = "Giorgio";
 alunno5.cognome = "Ugolinelli";
-alunno5.eta = "24";
+alunno5.eta = 24;
 
 console.log(elencoStudenti);
 
 for (var i = 0; i < elencoStudenti.length; i++) {
     console.log(elencoStudenti[i].nome, elencoStudenti[i].cognome);
 }
+
+// creare attraverso 3 prompt (nome, cognome, età) l'inserimento di un nuovo alunno
+var alunno6 = {};
+
+elencoStudenti.push(alunno6);
+
+nomAlunno = prompt("Inserisci il nome del nuovo alunno");
+alunno6.nome = nomAlunno;
+
+cognomAlunno = prompt("Inserisci il cognome del nuovo alunno");
+alunno6.cognome = cognomAlunno;
+
+etaAlunno = parseInt(prompt("Inserisci l'età del nuovo alunno"));
+alunno6.età = etaAlunno;
+
+console.log(alunno6);
