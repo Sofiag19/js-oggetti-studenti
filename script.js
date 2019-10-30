@@ -37,11 +37,6 @@ var alunno3 = {};
 var alunno4 = {};
 var alunno5 = {};
 
-elencoStudenti.push(alunno1);
-elencoStudenti.push(alunno2);
-elencoStudenti.push(alunno3);
-elencoStudenti.push(alunno4);
-elencoStudenti.push(alunno5);
 
 alunno1.nome = "Pietro";
 alunno1.cognome = "Lazzaro";
@@ -62,6 +57,12 @@ alunno4.eta = 26;
 alunno5.nome = "Giorgio";
 alunno5.cognome = "Ugolinelli";
 alunno5.eta = 24;
+
+elencoStudenti.push(alunno1);
+elencoStudenti.push(alunno2);
+elencoStudenti.push(alunno3);
+elencoStudenti.push(alunno4);
+elencoStudenti.push(alunno5);
 
 console.log(elencoStudenti);
 
