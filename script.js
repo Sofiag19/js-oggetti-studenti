@@ -14,7 +14,7 @@ var studente = {
 };
 
 for (var dati in studente) {
-  console.log(studente[dati]);
+  console.log(dati, ":", studente[dati]);
 }
 
 // metodo 2 - creo l'oggetto vuoto e lo riempio con le proprietà successivamente
@@ -25,7 +25,7 @@ studente1.cognome = "Magnini";
 studente1.età = 24;
 
 for (var dati1 in studente1) {
-  console.log(studente1[dati1]);
+  console.log(dati1, ":", studente1[dati1]);
 }
 
 // creare array di studenti e stampare per ognuno nome e cognome
@@ -86,4 +86,32 @@ alunno6.età = etaAlunno;
 
 console.log(alunno6);
 // che è uguale a scrivere
-console.log(elencoStudenti[5]);
+console.log(elencoStudenti);
+
+// creare array di studenti e stampare per ognuno nome e cognome - (2)
+var classe = [{
+  "nome" : "Filippo",
+  "cognome" : "Somma",
+  "età" : 21
+},{
+  "nome" : "Arturo",
+  "cognome" : "Lippi",
+  "età" : 29
+},{
+  "nome" : "Azelio",
+  "cognome" : "Ciampi",
+  "età" : 24
+}]
+
+console.log(classe);
+for (var i = 0; i < classe.length; i++) {
+  var elenco = classe[i];
+  var totale = "";
+  for (var prop in elenco) {
+    if (prop != "età") {
+      // console.log(elenco[prop]);
+      totale += elenco[prop] + " ";
+    }
+  }
+  console.log(totale);
+}
